@@ -29,6 +29,7 @@ app.get('/preview/:key', cors(), (request, response, next) => {
     })
 })
 
-app.listen(8888, () => {
+var port = process.env.PORT || 8888
+app.listen(port, () => {
   console.log('now you listening the port 8888!')
 })
